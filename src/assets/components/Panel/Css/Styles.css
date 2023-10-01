@@ -1,0 +1,16 @@
+._accHF{
+width:360px;
+height: 100vh;
+left: 50%;
+right: 50%;
+/* margin: auto auto auto 350px; */
+position: relative; 
+background-color:transparent;
+}
+
+@media screen and (min-width:410px) and (max-width:610){
+    ._accPG{
+
+    }
+}
+

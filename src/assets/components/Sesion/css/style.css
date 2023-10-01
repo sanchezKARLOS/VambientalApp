@@ -1,0 +1,116 @@
+:root{
+  --color_letras:#343A40;
+  --letras_blue_claro:#0DCAF0;
+  --letras_white:#fff;
+
+}
+
+.login-box{
+    position:relative;
+    margin:100px auto;
+    max-width: 350px;
+    max-height:400px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    --webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+    --moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+  }
+
+  @media (max-width: 960px) {
+    .login-box{
+      position:relative;
+      max-width: 350px;
+      max-height:400px;
+      background-color: #fff;
+      border-radius: 3px;
+      --webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+      --moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+      box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+    }
+
+    .login-box._lbPg{
+      margin-bottom: 20px;
+    }
+  }
+
+  .lb-header{
+    position:relative;
+    color: #00415d;
+    margin: 5px 5px 5px 5px;
+    padding-bottom:1px;
+    border-bottom: 1px solid #eee;
+    text-align:center;
+    height:10px;
+}
+
+  .dcs{
+    background-color: blue;
+  }
+
+  .email-login{
+    position:relative;
+    width: 100%;
+    height:auto;
+    margin-top: 20px;
+    text-align:center;
+  }
+  .u-form-group{
+    width:100%;
+    margin-bottom:15px;
+  }
+  .u-form-group input[type="email"],
+  .u-form-group input[type="password"]{
+    outline: none;
+    overflow: hidden;
+    padding: 0 12px;
+    min-width: 300px;
+    min-height:40px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    color: #333;
+    --webkit-transition:all 0.1s linear;
+    --moz-transition:all 0.1s linear;
+    transition:all 0.1s linear;
+    box-sizing: border-box;
+
+  }
+  input.ipt{
+    font-size: 17px;
+    line-height: 2.2rem;
+  }
+  .u-form-group input:focus{
+    border-color: #358efb;
+  }
+
+  .forgot-password{
+    width:50%;
+    text-align: left;
+    text-decoration: none;
+    color:var(--color_letras);
+    font-size: 0.75rem;
+  }
+
+  .forgot-sesion{
+    width: 100px;
+    background-color: red;
+    text-decoration: none;
+    color:var(--color_letras);
+    font-size: 0.75rem;
+  }
+  
+  div.c-lb-h{
+    grid-template-columns: 40% 20% 40%;
+    grid-column-gap: 2px;
+    grid-row-gap: 1%;
+    justify-items: stretch;
+    align-items: stretch;
+    margin: 2px 0;
+    display:grid;
+  }
+
+  .fc-g{
+    width: 28px;
+    height: 28px;
+  }

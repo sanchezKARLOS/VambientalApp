@@ -1,0 +1,113 @@
+/* .tindercard{
+    position: relative;
+    width:100%;
+    height: 100%;
+    background-color:white;
+    margin: 0;
+ 
+}
+._dcpa{
+    padding: 0;
+    height: auto;
+    width: 100%;
+    position: absolute;
+}
+.resim{
+    position: relative;
+    background-color: red;
+    height: 100%;
+    padding: 1ch;
+}
+
+.resim img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.bio{
+    border-bottom-left-radius:12px;
+    border-bottom-right-radius:12px;
+    position: relative;
+    background: rgb(0,0,0);
+}
+
+._dc{
+    height: 50vh;
+    position: reative;
+    background-color: blue;
+
+}
+.bio p{
+    margin:0;
+    padding:0;
+    color:white;
+    margin-bottom:5px;
+}
+.bio i{
+    margin-right:6px;
+}
+
+.bio h3{
+    color:white;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bio p{
+    font-size: 12px;
+}
+
+.alt span{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: ghostwhite;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0px;
+    padding-top: 15px;
+    float: left;
+    margin-right: 10px;
+}
+
+.alt i{
+    padding: 0px;
+    margin: 0px;
+}
+
+.alt{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+} */
+
+.card {
+    position: relative;
+    width: 600px;
+    padding: 20px;
+    max-width: 85vw;
+    height: 50vh;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+}
+
+.card > h3 {
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+}
+
+.card__container {
+    display: flex;
+
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.swipe {
+    position: absolute;
+}

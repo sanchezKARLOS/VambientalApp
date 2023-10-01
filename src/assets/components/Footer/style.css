@@ -1,0 +1,172 @@
+:root{
+  --text-color_suave:#737373;
+  --text-color_oscuro:#26272b;
+  --text-color_grey:#777777!important;
+  --text-color_grey2:#808080!important;
+  --bg_color_grey: #565656!important;
+  --bg_color_fond:#F0F2F5;
+}
+
+.site-footer
+{
+  background-color:#fff;
+  padding:10px 0 10px 0px;
+  font-size:16px;
+  line-height:10px;
+  color:var(--text-color_grey2)
+}
+
+.site-footer h6
+{
+  font-size:16px;
+  margin-top:5px;
+  text-align: left;
+}
+.site-footer a.get-movil
+{
+  color:var(--text-color_oscuro);
+
+  &&:hover{
+    color:green;
+    text-decoration:none;
+  }
+}
+
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  margin-left:6px;
+  margin-right:0;
+}
+
+.copyright-text
+{background-color:var(--bg_color_fond);
+  margin:0;
+  color:var(--text-color_oscuro);
+  padding: 10px 10px;
+}
+
+.social-icons a{
+  background-color:transparent;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  width:20%;
+  height:25px;
+  text-align:center;
+  --webkit-transition:all .2s linear;
+  --o-transition:all .2s linear;
+  transition:all .2s linear
+}
+
+p.t-c{
+  color: green;
+}
+
+.content-icon{
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1rem;
+  max-width: 50%;
+  min-width: 45%;
+  justify-content: center; 
+
+  height: 100%;
+}
+
+.container{
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+
+._dgmi{
+  display: flex; /* Utilizamos flexbox para centrar el contenido */
+  justify-content: center; /* Centramos horizontalmente */
+  align-items: center; /* Centramos verticalmente */
+}
+
+img{
+   max-width: 100%;
+   height: auto; 
+}
+
+
+
+/* ///////////////COMIENZO DEL DISEÑO RESPONSIVO(RESPONSIVE)/////////////// */
+
+
+@media screen and (min-width:481px) and (max-width:767px){
+._rowMB{
+display: grid;
+height: auto;
+}
+
+._dgmiP{
+  margin: 10px;
+}
+
+img{
+  max-width: 10%;
+  height: auto;
+}
+._tcenter{
+  padding: 5px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.col-sm-12{
+  display: grid;
+  position: relative;
+}
+.content-icon{
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1rem;
+  max-width: 90%;
+  padding: 0;
+  margin: 0;
+  min-width: 45%;
+  justify-content: center; 
+  height: 100%;
+}
+._cim{
+  margin: 0 auto;
+}
+
+.copyright-text{
+  width: 100%;
+  position: relative;
+}
+._tp{
+  
+width: 100%;
+}
+.site-footer .social-icons
+{
+  text-align:center;
+}
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+
+@media screen and (min-width: 1025px) {
+
+}
+
+@media (min-width:1026px)and(max-width:1200px){
+  
+}

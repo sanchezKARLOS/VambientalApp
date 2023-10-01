@@ -1,0 +1,172 @@
+:root{
+  --primary-color:#096EFD;
+  --color-fondo :#F0F2F5;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #ffffff;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  p {
+    margin: 0.5rem 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+.Container-1 {
+    width: 100vw;
+    height:100vh;
+    background-color:var(--color-fondo) ;
+    display: flex;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2px;
+    grid-row-gap: 1%;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+
+ .centered-div{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 90%;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #012a7092;
+ }
+
+ .content-boxshadow{
+   top:150px;
+   position: relative;
+   display: flex;
+   justify-content: flex-end;
+   height: 50vh;
+
+ }
+
+ .div100{
+   width: 50vw;
+ }
+
+ .showcase{
+  position: relative;
+   background: url('../public/principal_upc.png') no-repeat center center/cover;
+ }
+
+
+.showcase-content {
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.showcase-content h1 {
+  font-weight: 700;
+  font-size: 5.2rem;
+  line-height: 1.1;
+  margin: 0 0 2rem;
+}
+
+.showcase-content p {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 1.25;
+  margin: 0 0 2rem;
+}
+
+._dsc{
+  display: none;
+}
+
+
+#_sbt{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-fondo);
+}
+
+
+div._ptg{
+padding-top:50px;
+}
+
+
+/* ///////////diseño responsivo ///////////////////////////////*/
+
+@media (min-width:320px)and(max-width:480px){
+  .content-f{
+    padding:10px;  
+    position: absolute;
+   }
+ 
+ 
+ div h1{
+   color: var(--primary-color);
+   font-size: 40px;
+   font-weight: 700;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+}
+
+/* @media (max-width:550px) {
+ 
+} */
+@media(min-width:481px)and(max-width:768px){
+  ._dsc ._dct ._dvht{
+    display: block;
+    
+    }
+
+    h1 ._dvht{
+      color:red;
+    }
+}
+
+@media (min-width:769px)and(max-width:1024px){
+  
+}
+@media (max-width: 960px) {
+  .Container-1{
+   background-color: rgb(255, 13, 0);
+  
+  }
+  ._mb8{
+   background: gray;
+   height: 20px;
+  }
+  
+ .showcase {
+  display: none;
+ }
+ 
+ .showcase-content h1 {
+   font-size: 3.7rem;
+   line-height: 1;
+ }
+ 
+ .showcase-content p {
+   font-size: 1.5rem;
+ }
+ }
+ 
+@media (min-width:1025px)and(max-width:1200px){
+  
+}

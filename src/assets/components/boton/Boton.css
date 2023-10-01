@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
+
+:root{
+  --padding: 0 0 10px 0; ;
+  --text_decoracion:none;
+  --display_inline:inline-block;
+  --transition:opacity 0.3s ease-in ;
+  --cursor:pointer;
+  --font_famili: 'Amiri Quran',serif;
+  --text_Center:Center;
+  --font_size:15pt;
+  --border_radius:5px;
+  --outline:none;
+  --text_Color:#ffffff;
+  --text_Color_grey:#343A40;
+  --box_shadown:0 1px 0 rgba(0, 0, 0, 0.45);
+  --bacground_buttonV:#2B9D39;
+  --bacground_buttonA:#096EFD;
+  --borde_none:none;
+}
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+.btn{
+  text-decoration: var(--text_decoracion);
+  display: var(--display_inline);
+  color: var(--text_Color);
+  font-size:var(--font_size);
+  text-align: var(--text_Center);
+  border: var(--borde_none);
+  font-family: var(--font_famili);
+  cursor: var(--cursor);
+  transition: var(--transition);
+  outline: var(--outline);
+  border-radius: var(--border_radius);
+  padding: var(--padding);
+ 
+}
+
+.btn.btnA {
+    box-shadow: var(--box_shadown);
+    background: var(--bacground_buttonA); 
+  }
+  
+.btnv {
+    box-shadow: var(--box_shadown);
+    background: var(--bacground_buttonV);
+  }
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    color:var(--text_Color_grey);
+    border:1px solid gray;
+    justify-content: center; 
+    background-color:#ffffff;
+  }
+
+  .btn:hover {
+    opacity: 0.8;
+  }
+
+  .btn.large{
+    width: 230px;
+    height: 50px;
+  }
+
+  .btn.medium{
+    width: 160px;
+    height: 40px;
+  }
+
+  .btn.small{
+    width: 107px;
+    height: 22px;
+  }
+
+  span.icon-space{
+   padding: 8px 0 0 25px;
+    margin: 0;
+  }
+  
+  span.tp{
+    flex-grow: 1;
+    margin: 0;
+  }
+  /* span.t-m-p{
+    padding: 0;
+    margin: 0;
+    height:auto;
+   background-color: red;
+  }
+
+  div.div-cont{
+    height: 30px;
+  } */

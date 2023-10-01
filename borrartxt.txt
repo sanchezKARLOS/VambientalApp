@@ -1,0 +1,56 @@
+import React, { Component, useState } from "react";
+import './modal.css'
+import { SlClose } from "react-icons/sl";
+import Registro from "../Registro/Fregistro";
+import Buton from "../boton/Boton";
+
+class Layout extends Component {
+  render() {
+    const [showModal, setShowModal] = useState(false);
+    state = { showModal: false };
+    toggleModal = () => {
+      this.setShowModal.toggleModal 
+      ? this.setShowModal ({ showModal: !this.state.showModal })
+      : this.setShowModal({ showModal: true }); console.error("error en la modal");
+    };
+    
+    return (
+      <div onClick={this.toggleModal}>
+        <Buton
+         size="medium" 
+         className="btnv" 
+         title="Registrate" 
+        />
+        {this.state.showModal && (
+          <Modal 
+          onClose={this.toggleModal}
+          title="Registrate con Nosotros" 
+          form={<Registro/>} />
+        )}
+      </div>
+    );
+  }
+}
+
+ function Modal ({toggleModal, title, form, onClose}){
+
+    return (
+        <div className="modal-background">
+          <div className="modal-box">
+          <i onClick={onClose} className="closeBtn"><SlClose/></i>
+            <div className="heading">
+              <h1 className="title">{title}</h1>
+            </div>
+            <div className="content-f">{form}</div>
+          </div>
+        </div>
+    )
+  }
+
+
+
+se intalo tailwind
+type-props
+router-dom
+axios
+funciones de react{use....}
