@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@200&display=swap');
 :root{
   --text-color_suave:#737373;
   --text-color_oscuro:#26272b;
@@ -5,8 +6,17 @@
   --text-color_grey2:#808080!important;
   --bg_color_grey: #565656!important;
   --bg_color_fond:#F0F2F5;
+  --font-famili: "IBM Plex Sans",sans-serif;
 }
 
+div h6._textF,p._textF,a{
+  font-family: var(--font-famili);
+}
+.row{
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 100%;
+}
 .site-footer
 {
   background-color:#fff;
@@ -82,12 +92,18 @@ p.t-c{
   margin: 0;
   width: 100vw;
 }
+.container > div{
+  width: 100%;
+} 
 
 ._dgmi{
-  display: flex; /* Utilizamos flexbox para centrar el contenido */
-  justify-content: center; /* Centramos horizontalmente */
-  align-items: center; /* Centramos verticalmente */
+  padding-right: 80px; 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 img{
    max-width: 100%;
@@ -123,6 +139,7 @@ img{
   display: grid;
   position: relative;
 }
+
 .content-icon{
   text-align: justify;
   text-justify: inter-word;

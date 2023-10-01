@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@200&display=swap');
+
 :root{
   --primary-color:#096EFD;
   --color-fondo :#F0F2F5;
+  --textButton: "IBM Plex Sans",sans-serif;
 
 }
 
@@ -8,6 +11,8 @@ h1,
 h2,
 h3,
 h4 {
+  font-weight: 900;
+  font-family: var(--textButton);
     color: #ffffff;
   }
 
@@ -122,7 +127,7 @@ padding-top:50px;
    color: var(--primary-color);
    font-size: 40px;
    font-weight: 700;
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-family: var(--textButton)
  }
 }
 

@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@200&display=swap');
+
 :root{
+  --text-famili: "IBM Plex Sans",sans-serif;
   --color_letras:#343A40;
   --letras_blue_claro:#0DCAF0;
   --letras_white:#fff;
@@ -86,10 +89,11 @@
 
   .forgot-password{
     width:50%;
-    text-align: left;
+    font-family: var(--text-famili);
     text-decoration: none;
     color:var(--color_letras);
-    font-size: 0.75rem;
+    font-size: 1rem;
+    font-weight: 300;
   }
 
   .forgot-sesion{
@@ -101,6 +105,7 @@
   }
   
   div.c-lb-h{
+    font-family: var(--text-famili);
     grid-template-columns: 40% 20% 40%;
     grid-column-gap: 2px;
     grid-row-gap: 1%;

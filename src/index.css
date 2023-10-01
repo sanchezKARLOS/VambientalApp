@@ -34,7 +34,11 @@ html, body {
     padding: 0;
   }
 }
-
+@media (min-width: 1280px) {
+  .container {
+    max-width: 100%;
+  }
+}
 @media (max-width: 960px) {
   body{
     padding: 0;

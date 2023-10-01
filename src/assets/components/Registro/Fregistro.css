@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@200&display=swap');
+
 :root {
-    --font-famili: 'Raleway', sans-serif;
+    --font-famili: "IBM Plex Sans",sans-serif;
     --green: green;
     --celeste: #096EFD;
     --blue: #0020FF;
