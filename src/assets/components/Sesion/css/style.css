@@ -12,27 +12,16 @@
     position:relative;
     margin:100px auto;
     max-width: 350px;
-    max-height:400px;
+    max-height:420px;
     background-color: #fff;
-    padding: 5px;
-    border-radius: 3px;
+    padding: 1rem 0 1rem 0;
+    border-radius: 5px;
     --webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
     --moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
     box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
   }
 
   @media (max-width: 960px) {
-    .login-box{
-      position:relative;
-      max-width: 350px;
-      max-height:400px;
-      background-color: #fff;
-      border-radius: 3px;
-      --webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-      --moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-      box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-    }
-
     .login-box._lbPg{
       margin-bottom: 20px;
     }
@@ -69,7 +58,7 @@
     overflow: hidden;
     padding: 0 12px;
     min-width: 300px;
-    min-height:40px;
+    min-height:45px;
     border: 1px solid #ddd;
     border-radius: 6px;
     color: #333;
@@ -77,6 +66,7 @@
     --moz-transition:all 0.1s linear;
     transition:all 0.1s linear;
     box-sizing: border-box;
+    background-color: #fff;
 
   }
   input.ipt{
@@ -91,9 +81,8 @@
     width:50%;
     font-family: var(--text-famili);
     text-decoration: none;
-    color:var(--color_letras);
-    font-size: 1rem;
-    font-weight: 300;
+    color:#096EFD;
+    font-size: 15px;
   }
 
   .forgot-sesion{
@@ -112,6 +101,7 @@
     justify-items: stretch;
     align-items: stretch;
     margin: 2px 0;
+    font-size: 18px;
     display:grid;
   }
 

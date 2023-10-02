@@ -31,7 +31,7 @@ function Sesion() {
           icon={<FcGoogle className="fc-g" />}
           size="large"
           className="icon-button"
-          title="Inicia con Google"
+          title="Inicia con google"
         ></Button>
 
         <div className="c-lb-h">

@@ -29,7 +29,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="container">
+        <div className="container _cbt10">
           <div className="row">
             <div className="col-md-8 col-sm-6 col-xs-12">
               <div className="flex w-full">

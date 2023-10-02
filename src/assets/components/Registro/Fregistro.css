@@ -15,7 +15,17 @@
   * {
     box-sizing: border-box;
   }
+ p,a{
+  font-family: var(--font-famili);
+  font-size: 1rem;
+ }
 
+  ._Reftc{
+
+    text-decoration: none;
+    color:#096EFD;
+    font-size: 14px;
+  }
 
   .cont-line{
       position:relative;
@@ -32,18 +42,19 @@
     border: 0;
     outline: 0;
     font-size: 1rem;
-    background: transparent;
-    color: rgba(175, 175, 175, 0.851);
+
+    color: var(--text-color);
+    /* color: rgba(175, 175, 175, 0.851); */
     position: relative;
     font-family: var(--font-famili)
   }
  
   .content {
-    background-color:var(--bg-color-white);
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0;
-    min-height: 450px;
+    background-color: var(--bg-color-white);
+  max-width: 400px;
+  margin: 0 auto;
+  min-height: 450px;
+  padding: 1rem 0;
   }
   
   .content .title {
@@ -78,35 +89,31 @@
   .form-item {
     position: relative;
     width: 100%;
-    padding: 1em;
+    padding-bottom: 15px;
   }
   
   .form-item.col-5 {
     width: 50%;
   }
-  
-  .form-item{
-    height: 5em;
-  }
 
   .form-item .input{
     display: block;
-    padding: 1em;
+    padding: 0.5em;
     width: 100%;
     transition: all 0.3s;
-    border-bottom: 2px solid var(--celeste);
   }
 
   .form-item input[type="text"],
   .form-item input[type="password"],
   .form-item input[type="email"]
   {
+    background:#F0F2F5;
     min-width: 8px;
     outline: none;
     overflow: hidden;
     padding: 0 12px;
-    width: 354px;
-    height:58px;
+    min-width: 300px;
+    min-height:45px;
     border: 1px solid #ddd;
     border-radius: 6px;
     color: #333;
@@ -114,11 +121,14 @@
     --moz-transition:all 0.1s linear;
     transition:all 0.1s linear;
     box-sizing: border-box;
+
+    && .form-item .input:focus{
+      border: 1px solid var(--blue);
+      /* border-bottom: 2px solid var(--gris); */
+    }
   }
   
-  .form-item .input:focus{
-    border-bottom: 2px solid var(--gris);
-  }
+  
   
   /* .form-item .input:valid,
   .form-item .input:focus {
@@ -127,10 +137,13 @@
     font-size: 0.9em;
   } */
   
-  .form-item .input:valid {
-    border-bottom: 2px solid var(--blue);
-  }
+  /* .form-item .input:valid {
+    border: 1px solid var(--blue);
+  } */
   
+  .form-item .in:valid:valid {
+    border-bottom: 1px solid red;
+  }
 
   .form-item .btn-enviar {
     display: block;

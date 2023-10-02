@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@200&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@200&family=Sora:wght@800&display=swap');
+
 :root{
   --primary-color:#096EFD;
   --color-fondo :#F0F2F5;
   --textButton: "IBM Plex Sans",sans-serif;
-
+  --textTitle:"Sora",sans-serif;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-weight: 900;
-  font-family: var(--textButton);
+  font-family: var(--textTitle);
+  line-height: 1.2;
+  font-weight: 800;
+ 
     color: #ffffff;
   }
 
