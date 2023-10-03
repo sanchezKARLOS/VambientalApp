@@ -266,9 +266,9 @@ background-color:#c31b1b;
 
 
 ._dcNav{
-  display: flex;        /* Establece el contenedor como flexbox */
-  flex-direction: column; /* Establece la dirección de flexión a columna (vertical) */
-  justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del eje principal (vertical) */
+  display: flex;        
+  flex-direction: column; 
+  justify-content: space-between; 
   height: 100vh;  
 }
 
@@ -282,10 +282,10 @@ background-color:#c31b1b;
   flex: 10;
 }
 ._dnt2{
-  flex: 80; 
+  flex: 60; 
 }
 ._dnt3{
-  flex: 10;
+  flex: 20;
 }
 ul._ulSbar,
 li._lict{
@@ -389,11 +389,10 @@ li._lict{
   text-align: center;
 }
 
+
+
 ._ulSbar {
   list-style-type: none;
   padding: 0;
 }
 
-._lict {
-  margin-bottom: 10px;
-}

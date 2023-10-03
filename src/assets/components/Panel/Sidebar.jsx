@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import "./Css/Sidebar.css";
 
 //componente de iconos
-import Icon from './ComponetSidebar/Icon'
+import Icon from "./ComponetSidebar/Icon";
 
 //Componentes de opciones
 import SetSalones from "./Componente/Salones";
 import Ajustes from "./Componente/Ajustes";
-import Inicio from './Componente/Inicio'
+import Inicio from "./Componente/Inicio";
 
 const tabs = ["Inicio", "Salones", "Ajustes"];
 
@@ -16,66 +16,46 @@ const handleInicioClick = () => {
 };
 
 const TabContents = {
-  0: <Inicio/>,
+  0: <Inicio />,
   1: <SetSalones />,
   2: <Ajustes />,
 };
 
-
 const NavHeader = ({ activeTab, onTabClicked }) => (
-
   <header className="_s-h">
     {tabs.map((tab, index) => (
       <button
         key={tab}
         type="button"
         onClick={() => {
-          index === 0 ? handleInicioClick() : onTabClicked(index), toggleSidebar()
+          index === 0 ? handleInicioClick() : onTabClicked(index),
+            toggleSidebar();
         }}
         className={`${activeTab === index ? "_active" : ""}`}
       >
-        <Icon 
-        isActive={activeTab === index}
-        onClick={onTabClicked}
-        icon={tab} 
+        <Icon
+          isActive={activeTab === index}
+          onClick={onTabClicked}
+          icon={tab}
         />
       </button>
     ))}
     <div className="_uline" style={{ translate: `${activeTab * 100}% 0` }} />
   </header>
-)
- 
+);
+
 export const Sidebar = () => {
   const [activeTab, setActiveTab] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
-  const [isExpanded, setIsExpanded] = useState(false);
 
   const handleTabClicked = (tab) => {
     setActiveTab(tab);
   };
 
-  const toggleSidebar = () => {
-    setIsExpanded(!isExpanded);
-  };
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 767); // Cambiar a la medida de pantalla deseada para detectar modo móvil
-    };
-
-    // Agrega un listener para detectar cambios en el tamaño de la pantalla
-    window.addEventListener("resize", handleResize);
-    handleResize(); // Llama a la función inicialmente para establecer el estado inicial
-
-    // Limpia el listener cuando el componente se desmonta
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  useEffect(() => {}, []);
   return (
-    <aside className={`_sidebar ${isExpanded ? "expanded" : ""}`}>
+    <aside className="_sidebar">
       <NavHeader activeTab={activeTab} onTabClicked={handleTabClicked} />
-      <div className="_tabs" isMobile={isMobile}>
+      <div className="_tabs">
         {tabs.map((tab, index) => (
           <div
             key={tab}

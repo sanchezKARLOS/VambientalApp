@@ -52,23 +52,7 @@ function Navbar() {
       </nav>
 
       {/* //responsive para movil */}
-      {/* <div className="nav _navdesk" id="navbar">
-        <div className="nav-header">
-          <div className="nav-title">Vambiental</div>
-        </div>
-        <div className="nav-links">
-          <a href="#">
-            <i className="fa fa-home"></i> Home
-          </a>
-          <a href="#" >
-            <i className="fa fa-ddd"></i> Ajustes
-          </a>
-          <a href="#">
-            <i className="fa fa-ddd"></i>Notificaciones
-          </a>
-        </div>
-       
-      </div> */}
+     
     </>
   );
 }

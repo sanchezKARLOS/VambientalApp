@@ -33,10 +33,11 @@ function Footer() {
           <div className="row">
             <div className="col-md-8 col-sm-6 col-xs-12">
               <div className="flex w-full">
-                <div className="w-full grid">
-                  <div>
+                <div className="p-4 w-full grid">
+                  <div className="_dlhp p-4">
                     <p className="text-justify t-c p-4 inline-block _textF _text-w">
-                      Universidad Popular del Cesar, Seccional Aguachica.
+                      Universidad Popular del Cesar, <br className="upcnone"/>
+                       Seccional Aguachica.
                     </p>
                   </div>
                   <div className="m-4">

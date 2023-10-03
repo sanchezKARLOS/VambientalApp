@@ -4,16 +4,16 @@ import axios from "axios";
 // retorna un obejto que almacena los datos
 export const AppContext = createContext();
 
-export function useUserContext() {
-  return useContext(useContext);
-}
+// export function useUserContext() {
+//   return useContext(useContext);
+// }
 
 export function useUserToggleContext() {
   return useContext(useUserToggleContext);
 }
 
 //componente que engloba al resto de componentes
-export function ContentProvider({ title = undefined, children }) {
+export function ContentProvider({children }) {
   const [state, setState] = useState({});
   const [value, setValue] = useState({});
       
@@ -74,7 +74,6 @@ const LoginForm = () => {
         setValue
 
       }}>
-        <h1>{title}</h1>
         {children}
       </AppContext.Provider>
     </>

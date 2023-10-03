@@ -1,4 +1,4 @@
-import { useState,useContext } from "react";
+import { useState, useContext } from "react";
 // import  {ViewAppContext} from '../../../context/Content'
 import "./Css/Styles.css";
 
@@ -11,18 +11,17 @@ import Navbar from "./Navbar";
 // import Card from "./Componente/TCard";
 
 function Dashboard() {
-//   const [salones, setSalones] = useState([]);
-//   const handleSalonClick = (salon) => {
-//     console.log("Salón seleccionado:", salon.Nombre);
-//   };
-// const valor = useContext(ViewAppContext)
-// console.log(valor)
+  //   const [salones, setSalones] = useState([]);
+  //   const handleSalonClick = (salon) => {
+  //     console.log("Salón seleccionado:", salon.Nombre);
+  //   };
+  // const valor = useContext(ViewAppContext)
+  // console.log(valor)
   return (
     <>
-
+     
         <Navbar />
         <aside className="_accHF _accPG">
-          <div className="App"></div>
           {/* <ul>
         {salones.map((salon) => (
           <li key={salon.id}>
@@ -31,6 +30,7 @@ function Dashboard() {
         ))}
       </ul> */}
         </aside>
+     
     </>
   );
 }
