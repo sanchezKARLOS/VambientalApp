@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 // import InfSalon from "./ComponeSalon/InfoSalon"
 // import {useSalon} from './ComponeSalon/SalonProvider'
 
-import "./Css/Salones.css";
+import "./Css/Style-I-S.css";
 export default function SetSalone() {
   const { selectedSalon, handleSalonClick } = useState([null]); // Cambia usaSalon a useSalon
-
 
   return (
     <div className="salon-app">
@@ -52,17 +51,17 @@ export default function SetSalone() {
             InfArd: "Excelente",
           },
         ].map((salon, index) => (
-          <Link to={`/Salon/${salon.id}`} key={index}>
-            <button
-              key={index}
-              className={`salon-button ${
-                selectedSalon === salon ? "active" : ""
-              }`}
-              onClick={() => handleSalonClick(salon)}
-            >
-              {salon.Nombre}
-            </button>
-            </Link>
+          <button
+            key={index}
+            className={`salon-button ${
+              selectedSalon === salon ? "active" : ""
+            }`}
+            onClick={() => handleSalonClick(salon)}
+          >
+           <span>
+            {salon.Nombre}
+           </span>
+          </button>
         ))}
       </div>
       <div className="salon-content">

@@ -28,8 +28,7 @@ const NavHeader = ({ activeTab, onTabClicked }) => (
         key={tab}
         type="button"
         onClick={() => {
-          index === 0 ? handleInicioClick() : onTabClicked(index),
-            toggleSidebar();
+          index === 0 ? handleInicioClick() : onTabClicked(index)
         }}
         className={`${activeTab === index ? "_active" : ""}`}
       >

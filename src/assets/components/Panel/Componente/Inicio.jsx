@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
-import "./Css/Inicio.css";
+import "./Css/Style-I-S.css";
 export default function SetInicio() {
   const { selectedSalon, handleSalonClick } = useState([null]);
 
@@ -32,7 +32,7 @@ export default function SetInicio() {
             type:"Admin"
           },
         ].map((salon, index) => (
-          <Link to={`/Salon/${salon.id}`} key={index}>
+         
             <button
               key={index}
               className={`salon-button ${
@@ -42,7 +42,7 @@ export default function SetInicio() {
             >
               {salon.Nombre}
             </button>
-            </Link>
+        
         ))}
       </div>
     </div>

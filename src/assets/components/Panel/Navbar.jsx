@@ -33,13 +33,13 @@ function Navbar() {
         <div className="_dcnavtag _dnt3 _dnm">
         <ul className="logout">
           <li>
-            <a href="#">
+            <a href="#" className="_apdin">
               <i className="fa fa-power-off fa-2x"></i>
               <span className="nav-text">Cerrar Sesión</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" className="_apdin">
               <i className="fa fa-info fa-2x"></i>
               <span className="nav-text">Documentación</span>
             </a>
