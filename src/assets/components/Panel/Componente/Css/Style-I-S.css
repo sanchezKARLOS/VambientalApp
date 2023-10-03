@@ -37,3 +37,28 @@
     --moz-box-shadow: 0px 0px 1px 2px #004A99;
     box-shadow: 0px 0px 1px 1px #004A99;  
   }
+
+  
+  ._Ajuste-button {
+    background-color: #d0caca;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    min-width: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  ._Ajuste-button:hover {
+  opacity: 0.9;
+  }
+  ._Ajuste-button:focus{
+    color:#050505;
+border-radius: 5px;
+background-color:#f2f2f2;
+opacity: 0.9;
+--webkit-box-shadow: 0px 0px 2px 2px #bbbbbb;
+--moz-box-shadow: 0px 0px 2px 3px #bbbbbb;
+box-shadow: 0px 0px 2px 2px #bbbbbb;  
+transition: box-shadow 0.3s ease; 
+  }

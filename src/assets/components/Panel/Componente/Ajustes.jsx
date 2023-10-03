@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
-import "./Css/Ajustes.css";
+import "./Css/Style-I-S.css";
 export default function SetAjustes() {
   const { selectedSalon, handleSalonClick } = useState([null]);
 
@@ -22,7 +22,7 @@ export default function SetAjustes() {
               type:"Admin"
           }
         ].map((salon, index) => (
-          <Link to={`/Salon/${salon.id}`} key={index}>
+    
             <button
               key={index}
               className={`_Ajuste-button ${
@@ -32,7 +32,7 @@ export default function SetAjustes() {
             >
               {salon.Nombre}
             </button>
-            </Link>
+          
         ))}
       </div>
     </div>
