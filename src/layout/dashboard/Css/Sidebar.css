@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@200&display=swap');
+:root{
+    --text_famili:"IBM Plex Sans",sans-serif;;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+button{
+    font-family: var(--text_famili);
+    flex:1;
+    font-size: 1rem;
+    border: 0;
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+._btnBG{
+    border:1px solid gray;
+    background-color:#ffffff;
+    border-radius: 5px;
+    margin:2px;
+  }
+
+
+
+._sidebar{
+    top: 0;
+    left: 0;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    min-height:65vh;
+    background-color:transparent;
+    transition: width 0.4s;
+}
+
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1ps solid gray;
+    margin-bottom: 5px;
+}
+._s-h{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; 
+    padding: 0.1rem; 
+}
+
+.tab-content {
+    flex: 1;
+    padding: 5px;
+    display: none; 
+  }
+
+  .tab-content.active {
+    display: block; 
+  }
+
+.content-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow: hidden; 
+  }
+
+
+._sidebar header button{
+    flex: 1 1 auto;
+    display: inline-block;
+    place-items: center;
+    opacity: 0.6;
+}
+
+._sidebar header button._active{
+    background-color: #dddddd;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+._sidebar header ._uline {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 33.333333%;
+    height: 3px;
+    background: #096EFD;
+    transition: 0.3s;
+}
+
+._tabs{
+    flex: 1 1 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+._tabs > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    display: flex;
+    width: 100%;
+}
+
+._tabs > div > div{
+    flex: 1;
+    padding: 0 5px;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    ._sidebar {
+        top: 0;
+        left: 0;
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        background-color:rgb(68, 255, 0);
+        transition: width 0.4s; 
+      }
+}
+
+@media (max-width: 767px) {
+    /* Estilos para dispositivos móviles */
+    ._sidebar {
+      top: 0;
+      left: 0;
+      display:flex;
+      flex-direction: column;
+      width: 100%;
+      background-color:red;
+      transition: width 0.4s; 
+    }
+  
+    ._tabs {
+      margin-left: 0; /* Sin margen izquierdo en dispositivos móviles */
+    }
+
+  }

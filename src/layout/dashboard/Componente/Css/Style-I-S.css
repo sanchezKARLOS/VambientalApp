@@ -1,0 +1,93 @@
+
+  .salon-app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  
+  }
+  
+  .salon-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .salon-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    min-width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .salon-button:hover{
+    opacity: 0.9;
+  }
+  
+  .salon-button:focus{
+    opacity: 0.9;
+    --webkit-box-shadow: 0px 0px 1px 1px #004A99;
+    --moz-box-shadow: 0px 0px 1px 2px #004A99;
+    box-shadow: 0px 0px 1px 1px #004A99;  
+  }
+
+  
+  ._Ajuste-button {
+    background-color: #d0caca;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    min-width: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  ._Ajuste-button:hover {
+  opacity: 0.9;
+  }
+  ._Ajuste-button:focus{
+    color:#050505;
+border-radius: 5px;
+background-color:#f2f2f2;
+opacity: 0.9;
+--webkit-box-shadow: 0px 0px 1px 1px #bbbbbb;
+--moz-box-shadow: 0px 0px 1px 2px #bbbbbb;
+box-shadow: 0px 0px 1px 2px #bbbbbb;  
+transition: box-shadow 0.3s ease; 
+  }
+
+@media screen and(min-width:768px) and (max-width:1024px){
+  .salon-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+  @media (max-width:767px){
+    .salon-buttons {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .salon-button {
+      min-width:20%;
+      padding: 0;
+      margin: 0;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .salon-app {
+      padding: 5px;
+     
+     }
+  }
+
+ 

@@ -1,0 +1,420 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@200&display=swap');
+
+:root{
+  --text_famili: "IBM Plex Sans",sans-serif;
+  --text_title:"Sora",sans-serif;;
+}
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+  position: relative;
+  width: 38px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 22px;
+  padding: 9px;
+}
+
+.col-md-3{
+  background-color:#012970;
+}
+.main-menu {
+background:#ffffff;
+border-right:1px solid #e5e5e5;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:320px;
+overflow:hidden;
+--webkit-transition:width .05s linear;
+transition:width .05s linear;
+--webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+padding: 3px;
+display:block;
+margin: 0 auto;
+width:50%;
+}
+
+.main-menu li > a._apdin {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+--webkit-transform:translateZ(0) scale(1,1);
+--webkit-transition:all .1s linear;
+transition:all .5s linear;
+  
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+
+}
+
+a:hover,a:focus {
+text-decoration:none;
+
+}
+
+nav {
+--webkit-user-select:none;
+--moz-user-select:none;
+--ms-user-select:none;
+--o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>li>a:focus>.active>.active>a:hover>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#050505;
+border-radius: 5px;
+background-color:#f2f2f2;
+opacity: 0.9;
+--webkit-box-shadow: 0px 0px 2px 2px #bbbbbb;
+--moz-box-shadow: 0px 0px 2px 3px #bbbbbb;
+box-shadow: 0px 0px 2px 2px #bbbbbb;  
+transition: box-shadow 0.3s ease; 
+}
+
+
+._navdesk{
+  display: none;
+}
+
+/* Botón de menú para pantallas pequeñas */
+/* @media (max-width: 767px) {
+ 
+  .main-menu{
+    display: none;
+  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.nav-title {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+}
+
+.nav-btn label {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #efefef;
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 20px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #F8BE12;
+}
+} */
+
+
+/* ////// */
+
+/* Profile container */
+.profile {
+  margin: 20px 0;
+}
+
+._p-uDn{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* Profile sidebar */
+.profile-sidebar {
+  display: flex;
+  padding: 5px;
+}
+
+.profile-userpic img {
+  margin: 15px auto;
+  width: 60%;
+  height: 60%;
+  --webkit-border-radius: 50% !important;
+  --moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-family: var(--text_famili);
+}
+
+.profile-usertitle-job {
+  color: #5b9bd1;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  font-family: var(--text_title);
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  background-color: red;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+    
+.profile-usermenu {
+  margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #93a3b5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+  background-color: #fafcfd;
+  color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+  color: #5b9bd1;
+  background-color: #f6f9fb;
+  border-left: 2px solid #5b9bd1;
+  margin-left: -2px;
+}
+
+/* Profile Content */
+.profile-content {
+  padding: 20px;
+  background: #fff;
+  min-height: 460px;
+}
+
+
+._dcNav{
+  display: flex;        
+  flex-direction: column; 
+  justify-content: space-between; 
+  height: 100vh;  
+}
+
+._dcnavtag{
+  background-color: #ffffff; 
+  padding: 0.5rem;       
+  text-align: center; 
+}
+
+._dnt1{
+  flex: 10;
+}
+._dnt2{
+  flex: 60; 
+}
+._dnt3{
+  flex: 20;
+}
+ul._ulSbar,
+li._lict{
+  width: 100%;
+}
+
+@media (max-width:767px){
+  ul._ulSbar,
+li._lict, ._sidebar{
+  width: 100%;
+  height: 100%;
+}
+}
+@media (max-width: 768px) {
+  ._dcnavtag{
+    padding: 0 0.5rem;       
+  }
+  .main-menu{
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    position:absolute;
+    display: flex;
+    top: 0;
+   
+    width: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: left 0.3s ease; /* Animación de transición */
+  }
+  ._dcNav{
+    display:flex;        /* Establece el contenedor como flexbox */
+    flex-direction: column;
+    width: 100%;
+    height: auto;  
+  }
+  /* Estilo del contenedor principal */
+  .col-md-3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Estilo de la imagen de perfil */
+  .profile-userpic img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  /* Estilo de los datos del usuario */
+  /* .profile-usertitle {
+    margin-top: 10px;
+  } */
+
+  .profile-usertitle-name,
+  .profile-usertitle-job {
+    font-size: 16px;
+  }
+
+  /* Estilo de la barra de navegación lateral */
+  ._tab-btns {
+    height: 100%;
+    text-align: center;
+  }
+
+  ._ulSbar {
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+  }
+
+  /* ._lict {
+    margin-bottom: 10px;
+  } */
+  ._dnm{
+    display: none;
+  }
+
+  /* ._dnt1{
+    flex: 100;
+    height: 15vh;
+  } */
+  /* ._dnt2{
+    flex: 50; 
+  } */
+
+}
+
+@media screen and (max-width: 1024px) {
+  /* Estilos para cada elemento */
+
+}
+
+.col-md-3 {
+  width: 100%;
+  text-align: center;
+}
+
+.profile-userpic img {
+  max-width: 100px;
+  height: auto;
+}
+
+.profile-usertitle-name,
+.profile-usertitle-job {
+  font-size: 16px;
+}
+
+._tab-btns {
+  text-align: center;
+}
+
+
+
+._ulSbar {
+  list-style-type: none;
+  padding: 0;
+}
+

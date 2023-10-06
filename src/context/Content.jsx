@@ -1,84 +1,74 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  useReducer,
+} from "react";
 import axios from "axios";
+import { PropTypes } from "prop-types";
 
 // retorna un obejto que almacena los datos
-export const AppContext = createContext();
-
-// export function useUserContext() {
-//   return useContext(useContext);
-// }
-
-export function useUserToggleContext() {
-  return useContext(useUserToggleContext);
-}
+export const AppContext = createContext(null);
+AppContext.displayName = "Vambiental | App";
 
 //componente que engloba al resto de componentes
-export function ContentProvider({children }) {
-  const [state, setState] = useState({});
-  const [value, setValue] = useState({});
-      
-  const [nombre,setNombre]=useState("");
-  const [correo,setCorreo]=useState("");
-  const [carrera,setCarrera]=useState("");
-  const [passw,setPassw]=useState("");
-  const ListUsuarios = () => {
-    const [listusuario, setListUsuario] = useState([{}]);
-    // const [nUsuario, setnUsuario] = useState("");
-    // const [correo, setCorreo] = useState("");
-    // const [telefono, setTelefono] = useState("");
-    // const [ulsesion, setUlSesion] = useState("");
-    // const [carrera, setUlCarrera] = useState("");
-    // const [type, setType] = useState("");
-    // const [online, setOnline] = useState(Boolean);
-    // const [passw, setPassw] = useState("");
-
-
-    useEffect(() => {
-      axios
-        .get("http://localhost:8000/usuario")
-        .then((Response) => {
-          console.log(Response.data);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    });
-  };
-
-const LoginForm = () => {
-
-
-  const usuario ={
-    'nombre':nombre,
-    'correo':correo,
-    'carrera':carrera,
-    'passw':passw
-  }
-  axios.post('http://localhost:8000/usuario', {
-   usuario
-  })
-  .then(function (response) {
-    console.log(response);
-  })
-  .catch(function (error) {
-    console.log(error);
+export function ContentProvider({ children }) {
+  useEffect(() => {
+    axios
+      .get("http://localhost:8000/usuario")
+      .then((Response) => {
+        console.log(Response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   });
-   
-};
-  return (
-    <>
-    {/* //creamos el componente */}
-      <AppContext.Provider value={{
-        LoginForm,
-        setState,
-        setValue
 
-      }}>
-        {children}
-      </AppContext.Provider>
-    </>
-  );
+  const value=[{
+    nombre:"carlos",
+    apellido:"sanchez"
+  }]
+
+  return (
+  <AppContext.Provider 
+  value={value}>
+    {children}
+  </AppContext.Provider>
+  )
 }
 
-// arreglo {}
-// objeto [] , estructura de un objeto {}
+const LoginForm = () => {
+  const usuario = {
+    nombre: nombre,
+    correo: correo,
+    carrera: carrera,
+    passw: passw,
+  };
+  axios
+    .post("http://localhost:8000/usuario", {
+      usuario,
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+};
+
+function useContentController() {
+  const Context = useContext(AppContext);
+  if (!Context) {
+    throw new Error(
+      "useContentController should be used inside the ContentProvider "
+    );
+  }
+  return Context;
+}
+
+ContentProvider.prototype = {
+  children: PropTypes.node.isRequired,
+};
+
+export { useContentController };

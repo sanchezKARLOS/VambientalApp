@@ -1,21 +1,44 @@
-import React from "react";
 import "./App.css";
-import Dashboard from "./assets/components/Panel/Dashboard";
-import { Routes, Route, Link } from "react-router-dom";
-import Index from "./Principal";
-import { useState } from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Dashboard from "./layout/dashboard/index";
+import Index from "./layout/index/Index";
+import Registrate from './layout/auth/Registro/Index'
+import { useState, useEffect, useMemo } from "react";
+// react-router components
+
 function App() {
-  // const [user, setUser] = useState([]);
-
   return (
-    
-    <Routes>
-      <Route path="/" element={<Index />} />
+    <BrowserRouter
 
-      <Route path="/Cpanel" element={<Dashboard />} />
-
-    </Routes>
-  );
+    >
+      <Routes>
+        <Route
+          index
+          name="Indezx"
+          type="route"
+          path="/"
+          element={<Index />}
+        />
+        ,
+        <Route
+          key="dashboard"
+          name="Dashboard"
+          type="route"
+          path="/dashboard"
+          element={<Dashboard />}
+        />
+        ,
+        <Route
+          key="registrate"
+          name="Registrate"
+          type="route"
+          path="/registrate"
+          element={<Registrate/>}
+        />
+        ,
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App;

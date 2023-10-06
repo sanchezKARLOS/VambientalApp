@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@200&display=swap');
+
+
+:root{
+  --text_fontfamili: "IBM Plex Sans",sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+   background-color: transparent;
+  }
+  .container > div {
+    width: 50%;
+  }
+  .container {
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+  }
+  
+  .nav-container {
+    display:flex;
+    justify-content: space-between;
+    position:relative;
+    width: 100%;
+    align-items: center;
+    padding-right: 0.5rem;
+    height: auto;
+  }
+  .menu-items {
+    list-style: none;
+    display: flex;
+    flex-grow: 1; 
+  }
+  
+  .menu-items li {
+    flex-grow: 1;
+  }
+   
+  a {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-family:var(--text_fontfamili) ;
+  }
+  
+  .navbar .nav-container{
+    text-decoration: none;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  
+ .menu-items {
+    background-color: transparent;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+  }
+  
+  
+  .navbar .menu-items li {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .logo {
+    padding-top: 5px;
+    position:relative;
+    font-size: 2.2rem;
+    color: #0e2431;
+  }
+
+   h1._Vam{
+    color: #ffffff;
+ width: 70%;
+   }
+  @media (max-width:670px){
+
+    .nav-container{
+      padding: 0.5rem;
+    }
+    .logo {
+      font-size: 2.2rem;
+      top: 0;
+      width: 100%;
+      position:relative;
+    }
+    .menu-items {
+      width: 100%;
+      flex-direction: row;
+      transition: transform 0.5s ease-in-out;
+
+    }
+    
+    .navbar {
+      width: 100%;
+      height: 20%;
+      border-radius: 8px;
+   
+    }
+
+    .menu-items li {
+       display: flex;
+        flex-grow: 1;
+ 
+    }
+    .submenu {
+      display: block;
+      text-align: center;
+      position: static;
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+
+    .nav-container {
+      display:block;
+      height: auto;
+    }
+
+    .nav-container > div{
+      padding-top: 0.5rem;
+    }
+    .container > div {
+      width: 100%;
+    }
+  }
+  @media (max-width: 840px) {
+
+   
+    .menu-items li {
+     
+      margin-bottom: 0;
+    }
+  
+    .menu-items .dropdown {
+      position: static; /* Restaura la posición del menú desplegable en pantallas más grandes */
+    }
+  
+    .menu-items .dropdown .submenu {
+      display: none; /* Oculta el menú desplegable en pantallas más grandes */
+    }
+  }
