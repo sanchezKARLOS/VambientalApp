@@ -18,6 +18,9 @@ const Icon = ({ icon, isActive, onClick, index }) => {
     case "Ajustes":
       IconComponent = IoSettingsSharp;
       break;
+    case "Notification":
+        IconComponent = IoSettingsSharp;
+        break;
     default:
       return null;
   }

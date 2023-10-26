@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 // import  {ViewAppContext} from '../../../context/Content'
 import "./Css/Styles.css";
-
+import Cards from '../Cards/VappCard'
 import Search from "./Componente/Search";
 // import SetSalone from "./Componente/Salones";
 // import { Route } from "react-router-dom";
@@ -24,16 +24,11 @@ function Dashboard() {
           <Navbar />
         </div>
         <div className="_cas dd2">
-          <aside className="_accHF _accPG">
-            {/* <ul>
-        {salones.map((salon) => (
-          <li key={salon.id}>
-            <Link to={`/Salon/${salon.id}`}>{salon.Nombre}</Link>
-          </li>
-        ))}
-      </ul> */}
+          {/* <aside className="_accHF _accPG">
             <Search></Search>
-          </aside>
+          </aside> */}
+<Cards/>
+
         </div>
       </div>
     </>

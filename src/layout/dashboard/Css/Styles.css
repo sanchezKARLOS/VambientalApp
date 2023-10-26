@@ -1,33 +1,92 @@
-._accHF{
-width:360px;
-height: 100vh;
-left: 50%;
-right: 50%;
-/* margin: auto auto auto 350px; */
-position: relative; 
-background-color:blue;
+
+._cn._dd1 {
+  position: relative;
+  z-index: 1;
+  width: 24%;
+  height: 100vh;
+  left: 0;
 }
+._cas.dd2 {
+  background: #fbfbfb;
+  position: absolute;
+  width: 77%;
+  height: 100vh;
+  right: 0;
+  border-top-right-radius: 8px;
+}
+._dcNTldmas{
+  display: grid;
+  width: 100%;
+  position: relative;
+  grid-template-columns: 24% 75%;
+  grid-template-rows: 1fr;
+  justify-items: stretch;
+  align-items: stretch;
+  background-color: rgb(128, 117, 0);
+  height: 100vh;
+  border-radius: 8px;
 
-@media screen and (min-width:410px) and (max-width:610){
-    ._accPG{
+}
+@media screen and (min-width:410px) and (max-width:610px){
+  ._dcNTldmas{
+    display: grid;
+    position: relative;
+    grid-template-columns: 24% 75%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+    justify-items: stretch;
+    align-items: stretch;
+    background-color: rgba(9, 230, 255, 0.886);
+    height: 100vh;
+  }
+  ._cn._dd1 {
+      width: 100vw;
+      height: 35vh;
+      position: relative;
+     
+      left: 0;
+    }
 
+    ._cas.dd2 {
+      width: 100%;
+      border-radius: 0;
+      background-color:rgb(241, 162, 15); 
+      height: 100vh;
+      
     }
 }
 
 
-@media (max-width: 768px) {
+@media screen and (min-width:611px) and (max-width: 768px) {
     ._dcNTldmas{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 30% 70%;
-        grid-column-gap: 1px;
-        background-color: green;
-        grid-row-gap: 1px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 30% 70%;
     }
 
+    ._cn._dd1 {
+      width: 100%;
+        height: 35vh;
+      }
+
+      ._cas.dd2 {
+        width: 100%;
+        border-radius: 0;
+        background-color:green; 
+        height: 100vh;
+        
+      }
+      ._accHF._accPG{
+        background-color: rgb(255, 0, 217);
+   
+      }
    
 }
 
-._cD{
-    background-color: red;
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  ._dcNTldmas{
+    background-color: rgb(170, 45, 208);
+  
+  }
+
 }

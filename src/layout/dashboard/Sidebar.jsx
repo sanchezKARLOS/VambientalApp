@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import "./Css/Sidebar.css";
 
@@ -10,26 +9,29 @@ import SetSalones from "./Componente/Salones";
 import Ajustes from "./Componente/Ajustes";
 import Inicio from "./Componente/Inicio";
 
-const tabs = ["Inicio", "Salones", "Ajustes"];
+const tabs = ["Inicio", "Salones"];
 
-const handleInicioClick = () => {
-  window.location.href = window.location.href;
-};
 
 const TabContents = {
   0: <Inicio />,
   1: <SetSalones />,
-  2: <Ajustes />,
+};
+
+function handleInicioClick (e) {
+
+  window.location.href = window.location.href;
+  e.preventDefault();
 };
 
 const NavHeader = ({ activeTab, onTabClicked }) => (
+  
   <header className="_s-h">
     {tabs.map((tab, index) => (
       <button
         key={tab}
         type="button"
         onClick={() => {
-          index === 0 ? handleInicioClick() : onTabClicked(index)
+          index === 0 ? handleInicioClick() : onTabClicked(index);
         }}
         className={`${activeTab === index ? "active" : "_btnBG"}`}
       >
@@ -45,6 +47,7 @@ const NavHeader = ({ activeTab, onTabClicked }) => (
 );
 
 export const Sidebar = () => {
+  
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabClicked = (tab) => {

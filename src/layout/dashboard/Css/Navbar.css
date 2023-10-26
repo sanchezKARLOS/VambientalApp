@@ -27,7 +27,7 @@ font-size: 2em;
 }
 .main-menu {
 background:#ffffff;
-border-right:1px solid #e5e5e5;
+
 position:absolute;
 top:0;
 bottom:0;
@@ -118,58 +118,6 @@ transition: box-shadow 0.3s ease;
   display: none;
 }
 
-/* Botón de menú para pantallas pequeñas */
-/* @media (max-width: 767px) {
- 
-  .main-menu{
-    display: none;
-  }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-}
-
-.nav-title {
-  font-size: 24px;
-  color: #fff;
-  font-weight: 600;
-  margin: 0;
-}
-
-.nav-btn label {
-  display: none;
-  cursor: pointer;
-}
-
-.nav-links {
-  display: flex;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #efefef;
-  font-weight: 600;
-  font-size: 18px;
-  margin-right: 20px;
-  transition: color 0.2s;
-}
-
-.nav-links a:hover {
-  color: #F8BE12;
-}
-} */
-
-
-/* ////// */
 
 /* Profile container */
 .profile {
@@ -177,14 +125,13 @@ transition: box-shadow 0.3s ease;
 }
 
 ._p-uDn{
-  display: block;
+  display: flex;
   width: 100%;
   height: auto;
 }
 /* Profile sidebar */
 .profile-sidebar {
   display: flex;
-  padding: 5px;
 }
 
 .profile-userpic img {
@@ -197,7 +144,6 @@ transition: box-shadow 0.3s ease;
 }
 
 .profile-usertitle {
-  padding: 0.5rem;
   text-align: left;
 }
 
@@ -224,7 +170,7 @@ transition: box-shadow 0.3s ease;
   text-transform: uppercase;
   font-size: 11px;
   font-weight: 600;
-  background-color: red;
+  background-color: rgb(31, 172, 71);
   padding: 6px 15px;
   margin-right: 5px;
 }
@@ -311,8 +257,17 @@ li._lict{
   ul._ulSbar,
 li._lict, ._sidebar{
   width: 100%;
-  height: 100%;
+  height: 20vh;
+
 }
+
+._dnt1{
+  flex: 0;
+}
+._dnt2{
+  flex: 0; 
+}
+
 }
 @media (max-width: 768px) {
   ._dcnavtag{
@@ -324,8 +279,8 @@ li._lict, ._sidebar{
     position:absolute;
     display: flex;
     top: 0;
-   
     width: 100%;
+    height: 35vh;
     overflow-y: auto;
     z-index: 1000;
     transition: left 0.3s ease; /* Animación de transición */
@@ -334,7 +289,7 @@ li._lict, ._sidebar{
     display:flex;        /* Establece el contenedor como flexbox */
     flex-direction: column;
     width: 100%;
-    height: auto;  
+    height: 30vh;  
   }
   /* Estilo del contenedor principal */
   .col-md-3 {
@@ -348,26 +303,22 @@ li._lict, ._sidebar{
     height: auto;
   }
 
-  /* Estilo de los datos del usuario */
-  /* .profile-usertitle {
-    margin-top: 10px;
-  } */
-
   .profile-usertitle-name,
   .profile-usertitle-job {
     font-size: 16px;
   }
 
-  /* Estilo de la barra de navegación lateral */
+  /* Estilo de la barra de navegación horizontal */
   ._tab-btns {
     height: 100%;
     text-align: center;
   }
 
+
   ._ulSbar {
     list-style-type: none;
     padding: 0;
-    height: 100%;
+    
   }
 
   /* ._lict {
@@ -376,14 +327,6 @@ li._lict, ._sidebar{
   ._dnm{
     display: none;
   }
-
-  /* ._dnt1{
-    flex: 100;
-    height: 15vh;
-  } */
-  /* ._dnt2{
-    flex: 50; 
-  } */
 
 }
 
@@ -394,7 +337,9 @@ li._lict, ._sidebar{
 
 .col-md-3 {
   width: 100%;
+  border-top-left-radius: 8px;
   text-align: center;
+  background:#012970 ;
 }
 
 .profile-userpic img {
@@ -407,10 +352,6 @@ li._lict, ._sidebar{
   font-size: 16px;
 }
 
-._tab-btns {
-  text-align: center;
-}
-
 
 
 ._ulSbar {
@@ -418,3 +359,18 @@ li._lict, ._sidebar{
   padding: 0;
 }
 
+.btn-ajustes,
+.btn-notificar {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-ajustes:hover,
+.btn-notificar:hover {
+  background-color: #0056b3;
+}

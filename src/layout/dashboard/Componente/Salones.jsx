@@ -12,19 +12,6 @@ export default function SetSalone() {
       <div className="salon-buttons">
         {[
           {
-            id: 1,
-            Nombre: "Salon 110",
-            Capacidad: 30,
-            Temperatura: 25,
-            Humedad: 34,
-            UV: "Dia Caluroso",
-            C02: "Normal",
-            VC02: "300",
-            Fecha: "12/Noviembre/2023",
-            CBatery: "Medio",
-            InfArd: "Excelente",
-          },
-          {
             id: 2,
             Nombre: "Salon 112",
             Capacidad: 15,
@@ -37,19 +24,7 @@ export default function SetSalone() {
             CBatery: "Medio",
             InfArd: "Excelente",
           },
-          {
-            id: 3,
-            Nombre: "Salon 107",
-            Capacidad: 12,
-            Temperatura: 45,
-            Humedad: 54,
-            UV: "Dia Muy Caluroso",
-            C02: "Normal",
-            VC02: "100",
-            Fecha: "14/Noviembre/2023",
-            CBatery: "Medio",
-            InfArd: "Excelente",
-          },
+
         ].map((salon, index) => (
           <button
             key={index}

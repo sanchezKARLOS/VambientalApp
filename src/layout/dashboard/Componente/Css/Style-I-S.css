@@ -11,7 +11,7 @@
   .salon-buttons {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
   }
@@ -75,6 +75,7 @@ transition: box-shadow 0.3s ease;
     .salon-buttons {
       display: flex;
       flex-direction: row;
+      width: 100%;
     }
 
     .salon-button {
@@ -88,6 +89,8 @@ transition: box-shadow 0.3s ease;
       padding: 5px;
      
      }
+
+     
   }
 
  

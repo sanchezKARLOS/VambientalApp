@@ -18,7 +18,7 @@ button{
 }
 
 ._btnBG{
-    border:1px solid gray;
+
     background-color:#ffffff;
     border-radius: 5px;
     margin:2px;
@@ -32,7 +32,7 @@ button{
     display:flex;
     flex-direction: column;
     width: 100%;
-    min-height:65vh;
+    height:65vh;
     background-color:transparent;
     transition: width 0.4s;
 }
@@ -90,7 +90,7 @@ header{
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 33.333333%;
+    width: 50%;
     height: 3px;
     background: #096EFD;
     transition: 0.3s;
@@ -132,16 +132,13 @@ header{
     /* Estilos para dispositivos móviles */
     ._sidebar {
       top: 0;
-      left: 0;
-      display:flex;
       flex-direction: column;
       width: 100%;
+      height: 20vh;
       background-color:red;
       transition: width 0.4s; 
     }
   
-    ._tabs {
-      margin-left: 0; /* Sin margen izquierdo en dispositivos móviles */
-    }
+  
 
   }

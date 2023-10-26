@@ -47,7 +47,16 @@ class Layout extends Component {
     )
   }
 
-
+ // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:8000/usuario")
+  //     .then((Response) => {
+  //       console.log(Response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // });
 
 se intalo tailwind
 type-props

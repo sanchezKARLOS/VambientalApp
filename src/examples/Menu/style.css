@@ -1,0 +1,50 @@
+/* Estilos para el componente de menú */
+.menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.menu-button.active {
+  background-color: #ccc;
+}
+
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  width: 100%;
+  position: absolute;
+ top: 240;
+  height: 100vh;
+  left: 0;
+  
+  z-index: 30;
+}
+
+._at{
+  font-size: 12px;
+}
+
+/* .menu-list:hover{
+  display: none;
+} */
+.menu-item {
+  color: #ccc;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu-item:hover {
+  background-color: #444;
+}
