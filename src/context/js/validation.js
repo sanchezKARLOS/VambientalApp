@@ -65,7 +65,7 @@ export function isValidEmail(correo){
 
 
 export function isValidName(username){
-  if (username.length < 3 || username.length > 24) {
+  if (username.length < 3 || username.length > 25) {
     return false;
   }
     
