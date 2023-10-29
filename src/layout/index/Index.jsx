@@ -40,11 +40,14 @@ function Index() {
                 <div className="div100">
                   <div className="centered-div">
                     <div className="showcase-content">
-                      <h1 className="Vambiental-header">
+                  <img src="../../../public/variable.png" alt="logo" />
+
+
+                      {/* <h1 className="Vambiental-header">
                         Vambiental
                         <br />
                         App
-                      </h1>
+                      </h1> */}
                     </div>
                   </div>
                 </div>

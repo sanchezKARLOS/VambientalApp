@@ -1,0 +1,61 @@
+.navbar {
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    @apply max-w-screen-xl px-4 py-2 lg:px-8 lg:py-4;
+  }
+  
+  .brand {
+    margin-right: 1rem;
+    cursor: pointer;
+    @apply py-1.5 font-medium;
+  }
+  
+  .nav-list {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    @apply lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    font-weight: 500;
+    color: #90A4AE;
+    @apply font-medium p-1;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    @apply flex items-center;
+  }
+  
+  .login-button,
+  .signin-button {
+    display: none;
+  }
+  
+  .menu-button {
+    margin-left: auto;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: inherit;
+    cursor: pointer;
+    @apply h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent;
+  }
+  
+  @media (max-width: 959px) {
+    .nav-list {
+      display: none;
+    }
+    .login-button,
+    .signin-button {
+      display: block;
+    }
+  }
+  

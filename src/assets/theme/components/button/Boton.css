@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@200&display=swap');
 
 :root{
-  --padding: 0; ;
+  --padding: 0;
   --text_decoracion:none;
   --display_inline:inline-block;
   --transition:opacity 0.3s ease-in ;
@@ -9,7 +9,9 @@
   --textButton: "IBM Plex Sans",sans-serif;
   /* --font_famili: 'Amiri Quran',serif; */
   --text_Center:Center;
-  --font_size:15pt;
+  --font_large:15pt;
+  --font_medium:13pt;
+  --font_small:11pt;
   --border_radius:5px;
   --outline:none;
   --text_Color:#ffffff;
@@ -20,16 +22,17 @@
   --borde_none:none;
 }
   a {
+    position: relative;
     color: #ffffff;
     text-decoration: none;
   }
   
 .btn{
+  position: relative;
   font-weight: 900;
   text-decoration: var(--text_decoracion);
   display: var(--display_inline);
   color: var(--text_Color);
-  font-size:var(--font_size);
   text-align: var(--text_Center);
   border: var(--borde_none);
   font-family: var(--textButton);
@@ -74,26 +77,74 @@
   }
 
   .btn.large{
+    font-size:var(--font_large);
     width: 230px;
     height: 50px;
   }
 
   .btn.medium{
+    font-size:var(--font_medium);
     width: 160px;
     height: 40px;
   }
 
   .btn.small{
+    font-size: var(--font_small);
     width: 140px;
     height: auto;
   }
+  span{
+    position: absolute;
+  }
+
+  .btn span{
+    padding: 0;
+    margin: 0s;
+  }
 
   span.icon-space{
-   padding: 8px 0 0 25px;
+ padding: 0;
     margin: 0;
   }
   
   span.tp{
-    flex-grow: 1;
+    left: 0;
+    padding-top: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  span.ttp{
+    left: 0;
+    padding-top: 0.8rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  ._dcbtn._dvFlex {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+
+  ._dcbtn{
+    width: 100%;
+    height: 100%;
+  }
+
+  ._dc-d-title{
+    width: 100%;
+    height: 100%;
+    padding: 0;
     margin: 0;
+  }
+  ._dc-d-title.gg{
+    margin: 5px;
+    position: relative;
+  }
+
+  .gg span{
+    color: #343A40;
+    font-size: var(--font_medium);
   }

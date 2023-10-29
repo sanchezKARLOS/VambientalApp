@@ -4,15 +4,12 @@ import { FcGoogle } from "react-icons/fc";
 import Button from "../../../assets/theme/components/button/Boton";
 import {ValidareRegistro, isValidEmail} from '../../../context/js/validation'
 import { useContext, useState } from "react";
-import { useAuth } from "../../../context/Content";
 function Formulario() {
 
   const [username, setuserName] = useState("");
   const [correo, setCorreo] = useState("");
   const [carrera, setCarrera] = useState("");
   const [passw, setPassw] = useState("");
-
-  const messajeError = {}
 
 
   const handleRegister = () => {
@@ -35,11 +32,13 @@ function Formulario() {
           <h1 className="_titleh1">Registrate con</h1>
         </div>
         <div className="_ccspace">
-          <Button
+        <Button
+            type="Submit"
+            tpClass={true}
             icon={<FcGoogle className="fc-g" />}
             size="large"
             className="icon-button"
-            title="Inicia con Google"
+            title="Google"
           ></Button>
           <div className="c-lb-h">
             <div>
@@ -57,10 +56,9 @@ function Formulario() {
               type="text"
               autoComplete="on"
               arial-required="true"
-              max={20}
+              max={18}
               min={3}
               id="name"
-              value={username}
               
               className="input"
               placeholder="Nombre"
@@ -76,28 +74,22 @@ function Formulario() {
               min={7}
               max={25}
               id="correo"
-              required
-              value={correo}
-              onChange={() => {}}
+              
               className="input"
               placeholder="Correo Electronico"
               title="Campo Obligatorio"
               pattern="`[a-zA-Z0-9._%+-]+@unicesar\.edu\.co`"
+              required
             />
           </div>
-          {isValidEmail ? (
-        <p>Correo electrónico válido</p>
-      ) : (
-        <p>Correo electrónico no válido</p>
-      )}
+         
           <div className="form-item">
             <input
               min={4}
               max={20}
               type="text"
               autoComplete="off"
-              value={carrera}
-              onChange={e => setCarrera(e.target.value)}
+              
               id="carrera"
               required
               className="input"
@@ -110,23 +102,32 @@ function Formulario() {
               type="password"
               autoComplete="on"
               min={5}
-              max={25}
+              max={20}
               id="passw"
-              value={passw}
+              
               required
-              onChange={e => setPassw(e.target.value)}
               arial-required="true"
               className="input"
               placeholder="Constraseña"
               title="Ingresa nombre y apellido."
             />
           </div>
+
+          <div>
+          {isValidEmail ? (
+        <p>Correo electrónico válido</p>
+      ) : (
+        <p>Correo electrónico no válido</p>
+      )}
+          </div>
         </form>
         <div className="form-item">
           <Button
-            onClick={handleRegister}
+            tpClass={false}
+            ctClass="ttp"
             className="btnA"
             size="large"
+           
             title="Registrarse"
           />
         </div>

@@ -12,7 +12,8 @@
   --font-famili: "IBM Plex Sans",sans-serif;
   --text-title:"Sora",sans-serif;
 }
-p._textF,a{
+
+p, p._textF,a{
   color:#292524;
   font-size: 1rem;
   font-family: var(--font-famili);
@@ -258,6 +259,7 @@ p.copyright-text{
   align-items: center;
 }
 ._dlhp p{
+
   line-height: 1.3rem
 }
 .col-md-8.col-sm-6.col-xs-12 {
@@ -387,7 +389,7 @@ a._cwhite{
 }
 
 ._footer-contact {
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
 }
 ._footer-social {
   padding: 1rem;

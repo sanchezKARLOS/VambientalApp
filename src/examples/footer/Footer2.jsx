@@ -7,27 +7,29 @@ import { Link } from 'react-router-dom'
 function Footer() {
   return (
     <>
-    <footer class="_site-footer">
-        <div class="_container">
-            <div class="_footer-content">
-                <div class="_footer-logo">
+    <footer className="_site-footer">
+        <div className="_container">
+            <div className="_footer-content">
+                <div className="_footer-logo">
                     <img src="../../../public/Logos/logo.png" alt="Logo"/>
                 </div>
-                <div class="_footer-links">
+                <div className="_footer-links">
                     <ul>
                         <li><a href="#">Inicio</a></li>
                         <li><a href="#">Acerca de</a></li>
-                        <li><Button 
+                    </ul>
+                    <Button 
+            ctClass="tp"
+            tpClass={false}
             size="small"
             className="btnA _cwhite"
              as={Link}
              to="/"
             title="Inicia Sesion" 
           >
-            </Button></li>
-                    </ul>
+            </Button>
                 </div>
-                <div class="_footer-social">
+                <div className="_footer-social">
                     <ul>
                         <li>
                         <a href="#">
@@ -40,12 +42,12 @@ function Footer() {
                     </ul>
                 </div>
             </div>
-            <div class="_footer-contact">
+            <div className="_footer-contact">
                 <h3>Contacto</h3>
                 <p>Correo:carlosstqm2225@gmail.com</p>
             </div>
         </div>
-        <div class="_footer-bottom">
+        <div className="_footer-bottom">
             <p>
   &copy; 2023 - Actualizado por última vez el 5/10/2023 </p>
         </div>

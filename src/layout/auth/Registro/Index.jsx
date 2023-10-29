@@ -1,7 +1,7 @@
 import "./Fregistro.css";
 import Registro from "../Registro/Fregistro";
 import Footer from "../../../examples/footer/Footer2";
-import Nav from "../../../examples/Navbar/NavRegistro";
+
 function IndexRegistro() {
   return (
     <div className="_cchwfull">
@@ -9,7 +9,7 @@ function IndexRegistro() {
 
       <div className="_cnF">
         <div className="_cN p-8">
-          <Nav></Nav>
+        {/* navbar */}
         </div>
         <div className="_css-1-cont-r">
           <div className="_css-2-cont _css-2-item">

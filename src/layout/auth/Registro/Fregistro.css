@@ -8,6 +8,7 @@
     --gris: #c6c6c6eb;
     --bg-color: #171717;
     --text-color:#343A40;
+    --bagroundColor:#F0F2F5;
     --bg-color-white:#ffffff;
     --blue-border:#004A99;
   }
@@ -134,7 +135,7 @@
   height: 100%;
   min-height: 100vh;
   opacity: 1;
-  background: default;
+  background:var(--bagroundColor) ;
   color: #344767;
   border-radius: none;
   overflow-x: hidden;

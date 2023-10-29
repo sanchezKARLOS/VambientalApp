@@ -13,13 +13,26 @@ function Button({
   size,
   className,
   icon,
+  type,
   onClick,
   as: Component = "button",
+  tpClass,
+  ctClass,
   ...rest
 }) {
   const defaultBtnClass = "btn";
   const Bclass = className ? `${className}` : "undefine";
   const bnt = `${defaultBtnClass} ${Bclass} ${size}`;
+
+  const SeleClass = tpClass ? "tp" : ctClass || "";
+
+
+  const divContainClassFlex = `_dcbtn ${icon ? ' _dvFlex' : ''}`;
+  const DivIconc = '_dc-d-icon'
+  const DivTitle = '_dc-d-title'
+ 
+  const divTitleIcon = `${DivTitle} ${icon ? 'gg':''}`;
+
 
   {
     size ? "successfull" : "el tamaño es requerido";
@@ -35,10 +48,18 @@ function Button({
   }
 
   return (
-    <Component className={bnt} onClick={onClick} {...rest}>
-      {icon && <span className="icon-space">
-        {icon}</span>}
-      <span className="tp">{title}</span>
+    <Component
+      type={type}
+
+      className={bnt} onClick={onClick} {...rest}>
+      <div className={divContainClassFlex}>
+        <div className={DivIconc}>
+          {icon && <span className="icon-space">{icon}</span>}
+        </div>
+        <div className={divTitleIcon}>
+          <span className={SeleClass}>{title}</span>
+        </div>
+      </div>
     </Component>
   );
 }
@@ -47,6 +68,8 @@ Button.prototype = {
   title: PropTypes.string.isRequired,
   size: PropTypes.string,
   className: PropTypes.string,
+  tpClass: PropTypes.bool,
+  ctClass: PropTypes.string
 };
 
 // Button.defaultProps = {

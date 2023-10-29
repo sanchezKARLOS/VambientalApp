@@ -1,3 +1,59 @@
+import { ConnexionError, ValidatError } from "./Erros/Erros";
+
+// const valueinput = document.getElementById("#input");
+// const btn = document.getElementById("#Button");
+
+// btn.addEventListener('click',()=>{
+//   valueinput.value.length == 0 ? console.log("el campo no puede estar vacio")
+//   :
+//   console.log("Campo con datos")
+// })
+
+
+// document.querySelector('form')
+// .addEventListener('submit', e =>{
+//   e.preventDefault()
+//   const data = Object.fromEntries(
+//     new FormData(e.target)
+//   )
+//   alert(JSON.stringify(data))
+// })
+
+
+export const ValidateUsers = ({username, email, carrera, passw}) =>{
+  if(!username) throw new ValidatError('Nombre es requerido')
+  if(!email) throw new ValidatError('Email es requerido')
+  if(!carrera) throw new ValidatError('Carrera es requerida')
+  if(!passw) throw new ValidatError('Constraseña es requerida')
+
+try {
+  //mongodb
+} catch (error) {
+  throw new ConnexionError('database is not available')
+  
+}
+
+}
+
+
+try {
+  ValidateUsers({username, email, carrera, passw})
+} catch (error) {
+  if(error instanceof ConnexionError){
+    setTimeout(() =>{
+      ValidateUsers({username,email,carrera,passw})
+    })
+  }
+
+  if(error instanceof ValidatError){
+    //showmodalvalidation()
+  }
+  
+}
+
+
+
+
 export function isValidEmail(correo){
     let emailAuth =/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let isvalid = emailAuth.test(correo);
