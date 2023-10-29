@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@200&display=swap');
 
 :root{
-  --padding: 0; ;
+  --padding: 0;
   --text_decoracion:none;
   --display_inline:inline-block;
   --transition:opacity 0.3s ease-in ;
