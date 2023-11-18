@@ -3,10 +3,6 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Dashboard from "./layout/dashboard/index";
 import Index from "./layout/index/Index";
 import Registrate from './layout/auth/Registro/Index'
-
-import { useState, useEffect, useMemo } from "react";
-// react-router components
-
 function App() {
   return (
 
